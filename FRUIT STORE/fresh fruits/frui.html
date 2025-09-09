@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit - Fresh Fruits Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="FreshFruit Logo">
+      <h1>FreshFruit</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fruits">Fruits</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Marquee -->
+  <marquee class="marquee">
+    🍎 Fresh Apples just arrived! 🍌 Get Bananas at 20% off! 🍇 Grapes, Oranges, Mangoes, and more – Order Now! 🥭
+  </marquee>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Welcome to FreshFruit Store</h2>
+    <p>Your one-stop shop for fresh and organic fruits, delivered right to your doorstep!</p>
+  </section>
+
+  <!-- Fruits Section -->
+  <section id="fruits" class="fruits">
+    <h2>Our Fresh Fruits</h2>
+    <div class="fruit-grid">
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Red_Apple.jpg" alt="Apple">
+        <h3>Red Apples</h3>
+        <p>1 basket 12,000 frs</p>
+        <button onclick="addToCart('Red Apples', 3.5)">Add to Cart</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Banana">
+        <h3>Bananas</h3>
+        <p>1 bunch 5,000 frs</p>
+        <button onclick="addToCart('Bananas', 1.2)">Add to Cart</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/PerfectStrawberry.jpg" alt="Strawberry">
+        <h3>Strawberries</h3>
+        <p>4 box 15,000frs</p>
+        <button onclick="addToCart('Strawberries', 4.0)">Add to Cart</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg" alt="Orange">
+        <h3>Oranges</h3>
+        <p>2 bags 17,000frs</p>
+        <button onclick="addToCart('Oranges', 2.8)">Add to Cart</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Hapus_Mango.jpg" alt="Mango">
+        <h3>Mangoes</h3>
+        <p>1 basket 8,000frs</p>
+        <button onclick="addToCart('Mangoes', 5.0)">Add to Cart</button>
+      </div>
+
+      <div class="fruit-card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Kyoho-grape.jpg" alt="Grapes">
+        <h3>Grapes</h3>
+        <p>2 bags 12,000frs</p>
+        <button onclick="addToCart('Grapes', 3.0)">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Videos Section -->
+  <section id="videos" class="videos">
+    <h2>Watch Our Fresh Fruits in Action</h2>
+    <div class="video-grid">
+      <video controls>
+        <source src="fruit-video1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="fruit-video2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="cart">
+    <h2>Your Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: 35,000frs</p>
+    <button onclick="checkout()">Checkout</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 FruitMart. Inspired by Amazon. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

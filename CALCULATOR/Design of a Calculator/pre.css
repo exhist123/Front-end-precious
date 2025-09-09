@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+}
+
+.container {
+  position: relative;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 15px;
+  background: rgba(25, 25, 25, 0.95);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ffcc;
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 15px;
+  pointer-events: none;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Default button style */
+.buttons button {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #2c2f38;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.buttons button:hover {
+  background: #3b3f4a;
+}
+
+.buttons button:active {
+  transform: scale(0.9);
+}
+
+/* Number buttons */
+.buttons button:not(.operator) {
+  background: #2e2e2e;
+  color: #e0e0e0;
+}
+
+.buttons button:not(.operator):hover {
+  background: #3c3c3c;
+}
+
+/* Operator buttons */
+.operator {
+  background: #ff8c00;
+  color: white;
+}
+
+.operator:hover {
+  background: #ffa733;
+}
+
+/* Scientific function buttons */
+button[data-value="sin("],
+button[data-value="cos("],
+button[data-value="tan("],
+button[data-value="asin("],
+button[data-value="acos("],
+button[data-value="atan("],
+button[data-value="log10("],
+button[data-value="ln("],
+button[data-value="exp("],
+button[data-value="10**"],
+button[data-value="Math.sqrt("],
+button[data-value="Math.cbrt("],
+button[data-value="**2"],
+button[data-value="**3"],
+button[data-value="**"],
+button[data-value="!"],
+button[data-value="pi"],
+button[data-value="e"] {
+  background: #394867;
+  color: #00e6e6;
+}
+
+button[data-value="sin("]:hover,
+button[data-value="cos("]:hover,
+button[data-value="tan("]:hover,
+button[data-value="asin("]:hover,
+button[data-value="acos("]:hover,
+button[data-value="atan("]:hover,
+button[data-value="log10("]:hover,
+button[data-value="ln("]:hover,
+button[data-value="exp("]:hover,
+button[data-value="10**"]:hover,
+button[data-value="Math.sqrt("]:hover,
+button[data-value="Math.cbrt("]:hover,
+button[data-value="**2"]:hover,
+button[data-value="**3"]:hover,
+button[data-value="**"]:hover,
+button[data-value="!"]:hover,
+button[data-value="pi"]:hover,
+button[data-value="e"]:hover {
+  background: #4a5a7c;
+}
+
+/* Special buttons */
+button[data-value="AC"],
+button[data-value="DEL"] {
+  background: #d62828;
+  color: #fff;
+}
+
+button[data-value="AC"]:hover,
+button[data-value="DEL"]:hover {
+  background: #f94144;
+}
+
+button[data-value="±"],
+button[data-value="%"] {
+  background: #6a0572;
+  color: #fff;
+}
+
+button[data-value="±"]:hover,
+button[data-value="%"]:hover {
+  background: #9a0f98;
+}
+
+/* Equals button */
+button[data-value="="] {
+  grid-column: span 4;
+  background: #06d6a0 !important;
+  color: #fff;
+  font-size: 22px;
+}
+
+button[data-value="="]:hover {
+  background: #08f0b5 !important;
+}

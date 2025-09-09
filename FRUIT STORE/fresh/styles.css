@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+ nav{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgb(41, 225, 250)
+ }
+
+ nav .logo{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    color:antiquewhite;
+ }
+ nav .logo img{
+    width: 70px;
+    aspect-ratio: 1/1;
+ }
+ nav .nav-links {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ nav .nav-links li{
+    list-style-type: none;
+ }
+
+ nav .nav-links li a{
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
+ }
+nav .nav-linksv li a:hover{
+    color: aqua;
+    transition: 0.3s;
+}
+
+ .btn{
+    max-width: 210px;
+    display: flex;
+    gap: 10px;
+
+ }
+ .btn a{
+    text-decoration: none;
+    background-color: rgb(229, 255, 0);
+    padding: 10px 14px;
+    border-radius: 20px;
+ }
+ nav.search-bar{
+    background-color: aquamarine;
+    border-bottom: 1px solid gainsboro;
+ }
+
+ .items.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .items.search input,
+ .items.search select,
+ .items.search button{
+    padding: 10px 8px;
+    outline: none;
+     border: skyblue;
+ }
+.items.search select{
+    border-radius: 20px 0 0 20px;
+    border-right: none;
+    padding: 9px 8px;
+}
+.items.search button{
+    padding: 9px 16px;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+.items.users{
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.items.user button{
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid rgb(216, 206, 206);
+}
+.items.user button svg{
+    color: rgb(0, 38, 255);
+}
+/*hero section */
+.hero{
+    width: 100%;
+    height: 70vh;
+    background-image:url("My images/pexels-janetrangdoan-1132047.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+ .hero .hero-content{
+    background-color: rgb(199, 218, 236);
+    padding: 20px;
+    color: rgb(31, 5, 5);
+    box-shadow: peachpuff;
+    border-radius: 15px;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+ }
+ .hero .hero-content h1{
+    font-size: 30px;
+ }
+  .hero .hero-content a{
+    text-decoration: none;
+    background-color: rgb(229, 255, 0);
+    padding: 3px 14px;
+    border-radius: 20px;
+  }
