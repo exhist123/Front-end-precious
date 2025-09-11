@@ -1,0 +1,118 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Soft professional gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section{
+    width: 500px;
+    background: #ffffff; /* Clean white background */
+    border-radius: 10px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12); /* Subtle shadow */
+    padding: 30px 40px;
+    margin: 20px 0;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+legend{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1f3a93; /* Professional deep blue */
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.input-box label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #34495e; /* Dark gray for labels */
+}
+
+.input-box input,
+.input-box select{
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #ced6e0; /* Light professional gray border */
+    border-radius: 6px;
+    outline: none;
+    transition: .3s;
+    background-color: #fefefe; /* Slight off-white for inputs */
+    color: #2c3e50;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+    border: 1px solid #1f3a93; /* Deep blue highlight */
+    box-shadow: 0 0 5px rgba(31, 58, 147, 0.3);
+}
+
+.gender{
+    display: flex;
+    gap: 25px;
+}
+
+.gender .input-gender label{
+    font-size: 15px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.flex{
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+button{
+    width: 100%;
+    padding: 14px 0px;
+    border: none;
+    border-radius: 6px;
+    background: #1f3a93; /* Deep professional blue */
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #162d6f; /* Darker hover effect */
+}
+
+.error{
+    color: #e74c3c; 
+    padding: 4px;
+    font-size: 12px;
+}
